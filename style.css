@@ -1,0 +1,1201 @@
+@charset "UTF-8";
+/* --------------- 共通 --------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+    color: #655B50;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* --------------- header --------------- */
+.fixed{
+    width: 100%;
+    z-index: 1;
+    position: fixed
+}
+.bg-1{
+    background-color: #FEFCF3;
+    background-size: cover;
+}
+.wrapper{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 7%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 7%;
+    align-items: center;    
+}
+.logo{
+    height: 65px;
+    width: 222px;
+}
+.hamburger-menu_input{
+    display: none;
+}
+.hamburger-menu_btn{
+    display: none;
+}
+.menu{
+    display: flex; 
+}
+.menu-item{
+    list-style: none;
+    margin-left: 40px;
+}
+.menu-link{
+    font-size: 2.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 100%;
+    padding: 20px 0px;
+    display: block;
+}    
+.menu-link:hover{
+    color: #E08820;
+}
+
+/* --------------- fv --------------- */
+.fv{ 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 205px;
+    padding-bottom: 190px;
+}
+.fv-img{
+    height: 610px;
+    width: 450px;
+}
+.fv-heading{
+    margin-top: 150px;
+    text-align: right;
+}
+.fv-heading p{
+    font-size: 4.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 100%;
+    margin-bottom: 60px;
+}
+.fv-heading span{
+    font-size: 7.0rem;
+    font-weight: bold;
+    color: #E08820;
+}
+.fv-heading img{
+    padding-top: 100px;
+}
+
+/* --------------- greeting --------------- */
+.bg-2{
+    background-color: #F7F4EA;
+    background-size: cover;
+}
+.greeting{
+    padding-top: 150px;
+    padding-bottom: 180px;
+}
+.title{
+    position: relative;
+}
+.title h1{
+    font-size: 4.0rem;
+    color: #E08820;
+    letter-spacing: 0.05em;
+    line-height: 100%;
+    position: absolute;
+    top: 23px;
+    left: 64px;
+}
+.title h2{
+    font-size: 8.0rem;
+    color: transparent;-webkit-text-stroke: 3px #FEFCF3;
+    letter-spacing: 0.1em;
+    line-height: 100%;
+}
+.greeting-text{
+    max-width: 880px;
+    margin: 100px auto 70px;
+}
+.greeting-text p{
+    font-size: 2.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 200%;
+}
+.greeting-text span{
+    font-weight: bold;
+    color: #E08820;
+}
+.greeting-txt1{
+    margin-bottom: 30px;
+}
+.greeting-txt2{
+    margin-bottom: 30px;
+}
+.btn-right{
+    text-align: right;
+}
+.button{
+    font-size: 2.0rem;
+    color: #fff;
+    letter-spacing: 0.1em;
+    background-color: #E08820;
+    border: 3px solid #E08820;
+    border-radius: 9999px;
+    padding: 28px 48px;
+}
+.button:hover{
+    color: #E08820;
+}
+.button1:hover{
+    background-color: #F7F4EA;
+}
+
+/* --------------- service --------------- */
+.service{
+    padding-top: 150px;
+    padding-bottom: 180px;
+}
+.title span{
+    color: transparent;-webkit-text-stroke: 3px #F7F4EA;
+}
+.service-item{
+    background-color: #F7F4EA;
+    height: 500px;
+    width: 500px;
+    min-width: 500px;
+    border-radius: 50%;
+    margin: 100px auto 0;
+    position: relative; 
+}
+.service-number{
+    font-size: 3.0rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.1em;
+    line-height: 80px;
+    text-align: center;
+    background-color: #E08820;
+    height: 16%;
+    width: 16%;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+}
+.service-detail{
+    margin: 0 auto;
+    text-align: center;
+}
+.service-title{
+    font-size: 3.0rem;
+    font-weight: bold;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 100%;
+    padding-top: 15.4%;
+}
+.service-img{
+    height: 200px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+.service-text{
+    font-size: 2.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    max-width: 330px;
+    display: inline-block;
+}
+.secondline{
+    display: flex;
+    margin-bottom: 100px;
+}
+.button2:hover{
+    background-color: #FEFCF3;
+}
+
+/* --------------- works --------------- */
+.top-works{
+    padding-top: 150px;
+    padding-bottom: 180px;
+}
+.pickup-works{
+    margin-top: 100px;
+    margin-bottom: 130px;
+    padding-left: 2.5%;
+}
+.works-1stline{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.item{
+    height: 400px;
+    width: 550px;
+    min-width: 550px;
+    background-color: #FEFCF3;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.works-title{
+    font-family: "Bonheur Royale",cursive;
+    font-size: 5.0rem;
+    color: rgba(101, 91, 80, 0.15);
+    letter-spacing: 0.1em;
+    line-height: 100%;
+    transform: rotate(-8deg);
+    position: absolute;
+    top: 4%;
+    left: -5.5%;
+}
+.works-img img{
+    max-width: 100%;
+    height: 250px;
+}
+.works-2ndline{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --------------- contact --------------- */
+.top-contact{
+    padding-top: 150px;
+    padding-bottom: 180px;
+}
+.top-contact p{
+    font-size: 2.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 130px;
+}
+
+/* --------------- footer --------------- */
+.bg-3{
+    background-color: #655B50;
+    background-size: cover;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 7%;
+    align-items: center;
+}
+.footer p{
+    font-size: 1.6rem;
+    color: #FEFCF3;
+    letter-spacing: 0.05em;
+}
+.ig{
+    height: 30px;
+}
+.x{
+    height: 30px;
+    padding-left: 35px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- about --------------- */
+.about{
+    padding-top: 235px;
+    padding-bottom: 150px;
+}
+.profile{
+    margin: 100px 64px 120px 64px;
+    display: flex;
+    align-items: center;
+}
+.profile-detail{
+    margin-left: 65px;
+}
+.name1{
+    font-size: 2.0rem;
+    color: rgba(101, 91, 80, 0.5);
+    letter-spacing: 0.05em;
+    line-height: 100%;
+}
+.side{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 30px;
+}
+.name2{
+    font-weight: bold;
+    font-size: 4.0rem;
+    color: #655B50;
+    letter-spacing: 0.1em;
+    line-height: 100%;
+}
+.line1{
+    height: 40px;
+    width: 2px;
+    background-color: rgba(101, 91, 80, 0.5);
+    margin: 0 90px;
+}
+.jobtitle{
+    font-size: 2.5rem;
+    color: rgba(101, 91, 80, 0.5);
+    letter-spacing: 0.1em;
+    line-height: 100%;
+}
+.profile-txt{
+    font-size: 2.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 200%;
+}
+.message{
+    font-weight: bold;
+    font-size: 2.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 220%;
+    border: 5px solid rgba(224, 136, 32, 0.5);
+    border-radius: 10px;
+    padding: 50px 115px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+.message span{
+    color: #E08820;
+}
+
+/* --------------- career --------------- */
+.career{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.career-detail{
+    display: flex;
+    margin: 100px 64px 0 64px;
+    align-items: center;
+}
+.date{
+    font-size: 2.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 200%;
+}
+.date1{
+    margin-bottom: 226px;
+}
+.date2{
+    margin-bottom: 66px;
+}
+.date3{
+    margin-bottom: 106px;
+}
+.career-detail img{
+    margin: 0 70px;
+}
+.career-txt{
+    font-size: 2.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 200%;
+    max-width: 760px;
+}
+.career-txt1,.career-txt2,.career-txt3{
+    margin-bottom: 65px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- flow --------------- */
+.flow{
+    padding-top: 235px;
+    padding-bottom: 300px;
+}
+.flow p{
+    font-size: 2.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 200px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- works --------------- */
+.works{
+    padding-top: 235px;
+    padding-bottom: 80px;
+}
+.hp{
+    margin: 100px 0 150px;
+}
+.works-heading{
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #655B50;
+    letter-spacing: 0.1em;
+    line-height: 100%;
+    background-color: rgba(226, 136, 32, 0.07);
+    padding: 20px 22px;
+    border-left: 10px solid #E08820;
+}
+.grid{
+    margin-top: 40px;
+}
+.grid-line{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.works-bg{
+    height: 370px;
+    width: 550px;
+    background-color: #F7F4EA;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.works-bg:hover{
+    opacity:0.5;
+	transition:0.3s;
+}
+.hp-img{
+    height: 255px;
+    margin: 0 auto;
+}
+.grid-item p{
+    font-size: 2.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 100%;
+    margin: 20px;
+}
+.lp{
+    margin-bottom: 150px;
+}
+.lp-img{
+    height: 280px;
+    margin: 0 auto;
+}
+.banner{
+    margin-bottom: 150px;
+}
+.banner-img{
+    height: 250px;
+    margin: 0 auto;
+}
+.instagram{
+    margin-bottom: 150px;
+}
+.ig-img{
+    height: 180px;
+    width: 145px;
+    margin: 0 auto;
+}
+.card-img1{
+    height: 320px;
+    margin: 0 auto;
+}
+.card-img2{
+    height: 250px;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- contact --------------- */
+.contact{
+    padding-top: 235px;
+    padding-bottom: 200px;
+}
+.contact p{
+    font-size: 2.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 100%;
+    text-align: center;
+    margin: 100px 0;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- hp --------------- */
+.wrapper2{
+    max-width: 1216px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.works-detail{
+    padding-top: 165px;
+    padding-bottom: 230px;
+}
+.hp-mainimg{
+    height: 624px;
+    width: 1088px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.detail-title{
+    margin-bottom: 80px; 
+}
+.client{
+    font-size: 2.0rem;
+    color: #E08820;
+    letter-spacing: 0.05em;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+.side2{
+    display: flex;
+    align-items: center;
+}
+.titlename{
+    font-weight: bold;
+    font-size: 4.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 100%;
+}
+.line2{
+    height: 50px;
+    width: 2px;
+    background-color: rgba(101, 91, 80, 0.5);
+    margin: 0 120px;
+}
+.charge{
+    font-size: 2.5rem;
+    color: #E08820;
+    letter-spacing: 0.05em;
+    line-height: 100%;
+}
+.detail-point{
+    font-size: 2.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 200%;
+    max-width: 1088px;
+    margin-bottom: 70px;
+}
+.detail{
+    margin-bottom: 120px;
+}
+.detail-txt{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+.detail-txt img{
+    margin-top: 8px;
+}
+.detail-txt p{
+    font-size: 2.0rem;
+    color: #655B50;
+    letter-spacing: 0.05em;
+    line-height: 200%;
+    margin-left: 15px;
+}
+.detail-img{
+    text-align: center;
+    margin-bottom: 150px;
+}
+.detail-img img{
+    width: 340px;
+    vertical-align: top;
+}
+.img2{
+    margin: 0 25px;
+}
+.back-btn{
+    font-size: 2.0rem;
+    color: #E08820;
+    letter-spacing: 0.1em;
+    border: 3px solid #E08820;
+    border-radius: 9999px;
+    padding: 28px 48px;
+}
+.back-btn:hover{
+    border: 2px solid #E08820;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- lp --------------- */
+.lp-mainimg{
+    height: 624px;
+    width: 1100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- banner --------------- */
+.banner-mainimg{
+    height: 620px;
+    width: 620px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- ig --------------- */
+.ig-mainimg{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.ig-mainimg img{
+    height: 438px;
+    width: 350px; 
+}
+.ig-detailimg{
+    text-align: center;
+    margin-bottom: 150px; 
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- card --------------- */
+.card-mainimg{
+    height: 620px;
+    width: 685px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.card-mainimg2{
+    height: 620px;
+    width: 860px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+/* ========================================= スマホ版 ========================================= */
+
+@media (max-width: 600px){
+.wrapper{
+    padding: 0 5.3%;
+}
+
+/* --------------- header --------------- */
+.fixed{
+    position: static;
+}
+.header{
+    padding: 20px 5.3%;
+}
+.logo{
+    height: 44px;
+    width: 150px;
+}
+.hamburger-menu{
+    position: relative;
+}
+.hamburger-menu_btn{
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+    width: 25px;
+    gap: 7px 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.hamburger-menu_btn span,.hamburger-menu_btn span:before,.hamburger-menu_btn span:after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 25px;
+    background-color: #655B50;
+    position: absolute;
+}
+.hamburger-menu_btn span:before{
+    bottom: 8px;
+}
+.hamburger-menu_btn span:after{
+    top: 8px;
+}
+#hamburger:checked ~ .hamburger-menu_btn span{
+    background-color: rgba(101, 91, 80, 0);
+}
+#hamburger:checked ~ .hamburger-menu_btn span::before{
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#hamburger:checked ~ .hamburger-menu_btn span::after{
+    top: 0;
+    transform: rotate(-45deg);
+}
+.hamburger-menu_list{
+    height: 100%;
+    width: 100%;
+    background-color: #FEFCF3;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 85px;
+    left: 100%;
+    transition: 0.5s;
+    text-align: right;
+    padding-right: 5.3%;
+}
+#hamburger:checked ~ .hamburger-menu_list{
+    left: 0;
+}
+
+/* --------------- fv --------------- */
+.fv{
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.fv-img{
+    height: 295px;
+    width: 220px;
+    display: block;
+    margin: 0 auto;
+}
+.fv-heading{
+    margin-top: 40px;
+    text-align: center;
+}
+.fv-heading p{
+    font-size: 1.8rem;
+    margin-bottom: 40px; 
+}
+.fv-heading span{
+    font-size: 3.0rem;
+}
+.fv-heading img{
+    display: none;
+}
+
+/* --------------- greeting --------------- */
+.greeting{
+    padding: 80px 0 105px;
+}
+.title{
+    text-align: center;
+}
+.title h1{
+    font-size: 2.6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title h2{
+    font-size: 6.0rem;
+    color: transparent;-webkit-text-stroke: 2px #FEFCF3;
+    letter-spacing: 0.05em;
+}
+.greeting-text{
+    max-width: 335px;
+    margin: 60px auto 85px;
+}
+.greeting-text p{
+    font-size: 1.5rem;
+}
+.btn-right{
+    text-align: center;
+}
+.button{
+    font-size: 1.5rem;
+    padding: 22px 47px;
+}
+
+/* --------------- service --------------- */
+.service{
+    padding-top: 80px;
+    padding-bottom: 105px;
+}
+.title span{
+    color: transparent;-webkit-text-stroke: 2px #F7F4EA;
+}
+.service-item{
+    height: 335px;
+    width: 335px;
+    min-width: 335px;
+    margin: 60px auto 0;
+}
+.service-number{
+    font-size: 2.2rem;
+    line-height: 53.6px;
+}
+.service-title{
+    font-size: 2.2rem;
+}
+.service-img{
+    height: 134px;
+}
+.service-text{
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    max-width: 230px;
+}
+.secondline{
+    flex-direction: column;
+    margin-bottom: 85px;
+}
+
+/* --------------- works --------------- */
+.top-works{
+    padding-top: 80px;
+    padding-bottom: 105px;
+}
+.pickup-works{
+    width: 335px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 85px;
+    padding-left: 4.5%; 
+}
+.works-1stline{
+    flex-direction: column;
+    gap: 45px 0;
+    margin-bottom: 45px;
+}
+.item{
+    height: 233px;
+    width: 320px;
+    min-width: 320px;
+}
+.works-title{
+    font-size: 2.8rem;
+    left: -4.7%;
+}
+.works-img img{
+    height: 145px;
+}
+.works-2ndline{
+    flex-direction: column;
+    gap: 45px 0;
+}
+
+/* --------------- contact --------------- */
+.top-contact{
+    padding-top: 80px;
+    padding-bottom: 105px;
+}
+.top-contact p{
+    font-size: 1.5rem;
+    line-height: 200%;
+    margin: 53px auto 78px;
+    max-width: 300px;
+}
+
+/* --------------- footer --------------- */
+.footer{
+    flex-direction: column;
+    padding: 30px 5%;
+    gap: 20px;
+}
+.footer p{
+    font-size: 1.2rem;
+}
+.ig{
+    height: 25px;
+}
+.x{
+    height: 25px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- about --------------- */
+.about{
+    padding-top: 117px;
+    padding-bottom: 80px;
+}
+.profile{
+    margin: 60px auto;
+    flex-direction: column;
+}
+.profile img{
+    height: 250px;
+}
+.profile-detail{
+    margin-left: 0;
+    margin-top: 40px;
+}
+.name1{
+    font-size: 1.5rem;
+}
+.name2{
+    font-size: 2.2rem;
+    letter-spacing: 0.15em;
+}
+.line1,.jobtitle{
+    display: none;
+}
+.profile-txt{
+    font-size: 1.5rem;
+    max-width: 335px;
+}
+.message{
+    font-size: 1.5rem;
+    max-width: 335px;
+    border: 3px solid rgba(224, 136, 32, 0.5);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* --------------- career --------------- */
+.career{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+.career-detail{ 
+    flex-direction: column;
+    align-items: normal;
+    max-width: 335px;
+    margin: 60px auto;
+    position: relative;
+}
+.date{
+    font-size: 1.5rem;
+    color:  #E08820;
+    position: absolute;
+}
+.date1{
+    margin-bottom: 345px;
+}
+.date2{
+    margin-bottom: 105px;
+}
+.date3{
+    margin-bottom: 133px;
+}
+.career-detail img{
+    display: none;
+}
+.career-txt{
+    font-size: 1.5rem;
+    max-width: 335px;
+    padding-top: 30px;
+}
+.career-txt1,.career-txt2,.career-txt3{
+    margin-bottom: 76px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- flow --------------- */
+.flow{
+    padding-top: 117px;
+    padding-bottom: 250px;
+}
+.flow p{
+    font-size: 1.5rem;
+    margin-top: 250px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- works --------------- */
+.works{
+    padding-top: 117px;
+    padding-bottom: 80px;
+}
+.hp{
+    margin: 60px 0 110px;
+}
+.works-heading{
+    font-size: 2.2rem;
+    padding: 17px;
+    border-left: 7px solid #E08820;
+}
+.grid{
+    max-width: 335px;
+    margin: 40px auto 0;
+}
+.grid-line{
+    flex-direction: column;
+    margin-bottom: 50px;
+    gap: 50px 0;
+}
+.works-bg{
+    height: 225px;
+    width: 335px;
+}
+.hp-img{
+    height: 155px;
+}
+.grid-item p{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.lp{
+    margin-bottom: 110px;
+}
+.lp-img{
+    height: 155px;
+}
+.banner{
+    margin-bottom: 110px;
+}
+.banner-img{
+    height: 152px;
+}
+.instagram{
+    margin-bottom: 110px;
+}
+.ig-img{
+    height: 110px;
+    width: 88px;
+}
+.card-img1{
+    height: 165px;
+}
+.card-img2{
+    height: 158px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- contact --------------- */
+.contact{
+    padding-top: 117px;
+    padding-bottom: 200px;
+}
+.contact p{
+    font-size: 1.5rem;
+    line-height: 200%;
+    max-width: 335px;
+    margin: 53px auto;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- hp --------------- */
+.wrapper2{
+    max-width: 335px;
+    padding: 0;
+}
+.works-detail{
+    padding-top: 117px;
+    padding-bottom: 130px;
+}
+.hp-mainimg{
+    height: 192px;
+    width: 335px;
+    margin-bottom: 50px;
+}
+.detail-title{
+    margin-bottom: 50px; 
+}
+.client{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.side2{
+    justify-content: space-between;
+}
+.titlename{
+    font-size: 1.5rem;
+}
+.line2{
+    display: none;
+}
+.charge{
+    font-size: 1.5rem;
+}
+.detail-point{
+    font-size: 1.5rem;
+    max-width: 335px;
+    margin-bottom: 50px;
+}
+.detail{
+    margin-bottom: 80px;
+}
+.detail-txt img{
+    margin-top: 6px;
+    height: 18px;
+}
+.detail-txt p{
+    font-size: 1.5rem;
+    margin-left: 5px;
+    max-width: 312px;
+}
+.detail-img{
+    margin-bottom: 110px;
+}
+.detail-img img{
+    width: 105px;
+}
+.img2{
+    margin: 0 10px;
+}
+.back-btn{
+    font-size: 1.5rem;
+    border: 2px solid #E08820;
+    padding: 25px 50px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- lp --------------- */
+.lp-mainimg{
+    height: 190px;
+    width: 335px;
+    margin-bottom: 50px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- banner --------------- */
+.banner-mainimg{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- ig --------------- */
+.ig-mainimg{
+    margin-bottom: 50px;
+}
+.ig-mainimg img{
+    height: 135px;
+    width: 108px; 
+}
+.ig-detailimg{
+    margin-bottom: 110px; 
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------- card --------------- */
+.card-mainimg{
+    height: 200px;
+    width: 220px;
+    margin-bottom: 50px;
+}
+.card-mainimg2{
+    height: 200px;
+    width: 277px;
+    margin-bottom: 50px;
+}
+}
