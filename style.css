@@ -612,6 +612,12 @@ img{
     line-height: 200%;
     margin-left: 15px;
 }
+.detail-txt a{
+    color: #655B50;
+}
+.detail-txt a:hover{
+    color: #E08820;
+}
 .detail-img{
     text-align: center;
     margin-bottom: 150px;
