@@ -709,9 +709,6 @@ img{
 }
 
 /* --------------- header --------------- */
-.fixed{
-    position: static;
-}
 .header{
     padding: 20px 5.3%;
 }
